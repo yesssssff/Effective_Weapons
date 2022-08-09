@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "effectiveweapons",
+  "version": "${version}",
+
+  "name": "Effective Weapons",
+  "description": "A mod all about potion effects and weapons",
+  "authors": [
+    "DioPie"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT license",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.diopie.effectiveweapons.EffectiveWeapons"
+    ],
+    "client": [
+      "net.diopie.effectiveweapons.EffectiveWeaponsClient"
+    ]
+  },
+  "mixins": [
+    "effectiveweapons.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
